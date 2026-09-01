@@ -1,0 +1,96 @@
+@import "./variables.css";
+
+#form_inicio_sesion {
+  display: flex;
+  justify-content: center;
+}
+
+.container_inicio_sesion {
+  width: min(100%, 400px);
+  background: var(--blanco);
+  border-radius: var(--radio-card);
+  box-shadow: var(--sombra-card);
+  padding: 2.25rem 2rem 2rem;
+}
+
+.container_inicio_sesion h2 {
+  font-family: var(--fuente-display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+  color: var(--tinta);
+}
+
+#form_inicio_sesion form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.campo_inicio_sesion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.campo_inicio_sesion label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--tinta-suave);
+}
+
+.campo_inicio_sesion input {
+  font-family: var(--fuente-ui);
+  font-size: 0.95rem;
+  padding: 0.85rem 1rem;
+  background: var(--input-bg);
+  border: 1px solid var(--input-borde);
+  border-radius: var(--radio-input);
+  color: var(--tinta);
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.campo_inicio_sesion input::placeholder {
+  color: #9a9d94;
+}
+
+.campo_inicio_sesion input:focus {
+  background: var(--blanco);
+  border-color: var(--acento-suave);
+}
+
+.btn_enviar {
+  margin-top: 0.4rem;
+  width: 100%;
+  border: none;
+  background: var(--tinta);
+  color: var(--blanco);
+  font-family: var(--fuente-ui);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.9rem 1rem;
+  border-radius: var(--radio-pill);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn_enviar:hover {
+  background: var(--acento);
+}
+
+.btn_enviar:active {
+  transform: scale(0.98);
+}
+
+.btn_enviar:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: 2px;
+}
+
+@media (max-width: 460px) {
+  .container_inicio_sesion {
+    padding: 1.75rem 1.4rem;
+  }
+}

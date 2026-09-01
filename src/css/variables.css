@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --tinta: #191b18;
+  --tinta-suave: #565b54;
+  --blanco: #ffffff;
+
+  --fondo-base: #dfe4e1;
+  --blob-verde: #9db89a;
+  --blob-arena: #e7c47e;
+  --blob-coral: #dd8a6c;
+  --blob-azul: #90aec8;
+
+  --input-bg: #f1f2ec;
+  --input-borde: #e2e4db;
+
+  --acento: #34493f;
+  --acento-suave: #6f8579;
+
+  --radio-card: 28px;
+  --radio-input: 14px;
+  --radio-pill: 999px;
+
+  --sombra-card: 0 30px 60px -20px rgba(25, 27, 24, 0.35),
+                 0 10px 20px -10px rgba(25, 27, 24, 0.15);
+
+  --fuente-display: "Newsreader", serif;
+  --fuente-ui: "Manrope", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
